@@ -16,7 +16,7 @@ public class BufferActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        Observable.range(1, 10).buffer(2)
+        Observable.range(1, 11).buffer(5,1)
                 .subscribe(new Consumer<List<Integer>>() {
                     @Override
                     public void accept(List<Integer> integers) throws Exception {
