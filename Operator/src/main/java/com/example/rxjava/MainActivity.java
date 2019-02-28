@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_defaultIfEmpty).setOnClickListener(this);
         findViewById(R.id.btn_sequenceEqual).setOnClickListener(this);
         findViewById(R.id.btn_skipUntil).setOnClickListener(this);
+        findViewById(R.id.btn_skipWhile).setOnClickListener(this);
+        findViewById(R.id.btn_takeUntil).setOnClickListener(this);
+        findViewById(R.id.btn_takeWhile).setOnClickListener(this);
+        findViewById(R.id.btn_merge).setOnClickListener(this);
+        findViewById(R.id.btn_zip).setOnClickListener(this);
     }
 
     @Override
@@ -126,6 +131,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(v.getId() == R.id.btn_skipUntil){
             Intent intent = new Intent(this,SkipUntilActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_skipWhile){
+            Intent intent = new Intent(this,SkipWhileActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_takeUntil){
+            Intent intent = new Intent(this,TakeUntilActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_takeWhile){
+            Intent intent = new Intent(this,TakeWhileActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_merge){
+            Intent intent = new Intent(this,MergeActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_zip){
+            Intent intent = new Intent(this,ZipActivity.class);
             startActivity(intent);
         }
     }

@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.example.myapplication"
+        applicationId "com.example.rxjava"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
