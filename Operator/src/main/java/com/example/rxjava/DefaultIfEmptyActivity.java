@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.rxjava;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapplication">
+    package="com.example.rxjava">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.rxjava.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,106 +18,111 @@
         </activity>
 
         <activity
-            android:name=".MapActivity"
+            android:name="com.example.rxjava.MapActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".FlatMapActivity"
+            android:name="com.example.rxjava.FlatMapActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".GroupByActivity"
+            android:name="com.example.rxjava.GroupByActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".BufferActivity"
+            android:name="com.example.rxjava.BufferActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".WindowActivity"
+            android:name="com.example.rxjava.WindowActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".FirstActivity"
+            android:name="com.example.rxjava.FirstActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LastActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name=".TakeActivity"
+            android:name="com.example.rxjava.LastActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".TakeLastActivity"
+            android:name="com.example.rxjava.TakeActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".SkipActivity"
+            android:name="com.example.rxjava.TakeLastActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".SkipLastActivity"
+            android:name="com.example.rxjava.SkipActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".ElementActivity"
+            android:name="com.example.rxjava.SkipLastActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".IgnoreElementActivity"
+            android:name="com.example.rxjava.ElementActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".DistinctActivity"
+            android:name="com.example.rxjava.IgnoreElementActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".FilterActivity"
+            android:name="com.example.rxjava.DistinctActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".DebounceActivity"
+            android:name="com.example.rxjava.FilterActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".AllActivity"
+            android:name="com.example.rxjava.DebounceActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".ContainsActivity"
+            android:name="com.example.rxjava.AllActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".AmbActivity"
+            android:name="com.example.rxjava.ContainsActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".DefaultIfEmptyActivity"
+            android:name="com.example.rxjava.AmbActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".SequenceEqualActivity"
+            android:name="com.example.rxjava.DefaultIfEmptyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.rxjava.SequenceEqualActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.rxjava.SkipUntilActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 

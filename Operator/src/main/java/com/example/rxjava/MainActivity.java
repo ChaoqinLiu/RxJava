@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.rxjava;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_amb).setOnClickListener(this);
         findViewById(R.id.btn_defaultIfEmpty).setOnClickListener(this);
         findViewById(R.id.btn_sequenceEqual).setOnClickListener(this);
+        findViewById(R.id.btn_skipUntil).setOnClickListener(this);
     }
 
     @Override
@@ -121,6 +122,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(v.getId() == R.id.btn_sequenceEqual){
             Intent intent = new Intent(this,SequenceEqualActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_skipUntil){
+            Intent intent = new Intent(this,SkipUntilActivity.class);
             startActivity(intent);
         }
     }

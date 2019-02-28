@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.rxjava;
 
 
 import android.os.Bundle;
@@ -6,13 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.widget.TextView;
 
-import com.example.myapplication.List.User;
+import com.example.rxjava.List.User;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import io.reactivex.Observable;
-import io.reactivex.ObservableSource;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 

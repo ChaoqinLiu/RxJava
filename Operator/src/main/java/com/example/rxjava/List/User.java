@@ -1,4 +1,4 @@
-package com.example.myapplication.List;
+package com.example.rxjava.List;
 
 import java.util.List;
 
