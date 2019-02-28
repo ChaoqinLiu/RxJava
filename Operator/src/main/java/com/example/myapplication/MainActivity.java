@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_last).setOnClickListener(this);
         findViewById(R.id.btn_take).setOnClickListener(this);
         findViewById(R.id.btn_takelast).setOnClickListener(this);
+        findViewById(R.id.btn_skip).setOnClickListener(this);
+        findViewById(R.id.btn_skipLast).setOnClickListener(this);
     }
 
     @Override
@@ -61,6 +63,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(v.getId() == R.id.btn_takelast){
             Intent intent = new Intent(this,TakeLastActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_skip){
+            Intent intent = new Intent(this,SkipActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_skipLast){
+            Intent intent = new Intent(this,SkipLastActivity.class);
             startActivity(intent);
         }
     }
