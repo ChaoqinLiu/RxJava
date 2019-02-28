@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_groupBy).setOnClickListener(this);
         findViewById(R.id.btn_buffer).setOnClickListener(this);
         findViewById(R.id.btn_window).setOnClickListener(this);
+        findViewById(R.id.btn_first).setOnClickListener(this);
+        findViewById(R.id.btn_last).setOnClickListener(this);
+        findViewById(R.id.btn_take).setOnClickListener(this);
+        findViewById(R.id.btn_takelast).setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +45,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(v.getId() == R.id.btn_window){
             Intent intent = new Intent(this,WindowActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_first){
+            Intent intent = new Intent(this,FirstActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_last){
+            Intent intent = new Intent(this,LastActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_take){
+            Intent intent = new Intent(this,TakeActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_takelast){
+            Intent intent = new Intent(this,TakeLastActivity.class);
             startActivity(intent);
         }
     }
