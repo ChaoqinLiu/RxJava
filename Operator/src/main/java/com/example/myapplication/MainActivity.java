@@ -30,6 +30,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_distinct).setOnClickListener(this);
         findViewById(R.id.btn_filter).setOnClickListener(this);
         findViewById(R.id.btn_debounce).setOnClickListener(this);
+        findViewById(R.id.btn_all).setOnClickListener(this);
+        findViewById(R.id.btn_contains).setOnClickListener(this);
+        findViewById(R.id.btn_amb).setOnClickListener(this);
+        findViewById(R.id.btn_defaultIfEmpty).setOnClickListener(this);
+        findViewById(R.id.btn_sequenceEqual).setOnClickListener(this);
     }
 
     @Override
@@ -96,6 +101,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(v.getId() == R.id.btn_debounce){
             Intent intent = new Intent(this,DebounceActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_all){
+            Intent intent = new Intent(this,AllActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_contains){
+            Intent intent = new Intent(this,ContainsActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_amb){
+            Intent intent = new Intent(this,AmbActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_defaultIfEmpty){
+            Intent intent = new Intent(this,DefaultIfEmptyActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_sequenceEqual){
+            Intent intent = new Intent(this,SequenceEqualActivity.class);
             startActivity(intent);
         }
     }
