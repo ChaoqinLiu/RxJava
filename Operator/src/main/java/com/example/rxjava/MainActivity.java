@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_combineLatest).setOnClickListener(this);
         findViewById(R.id.btn_join).setOnClickListener(this);
         findViewById(R.id.btn_startWith).setOnClickListener(this);
+        findViewById(R.id.btn_connect).setOnClickListener(this);
+        findViewById(R.id.btn_refCount).setOnClickListener(this);
+        findViewById(R.id.btn_replay).setOnClickListener(this);
     }
 
     @Override
@@ -166,6 +169,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(v.getId() == R.id.btn_startWith){
             Intent intent = new Intent(this,StartActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_connect){
+            Intent intent = new Intent(this,ConnectActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_refCount){
+            Intent intent = new Intent(this,RefCountActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_replay){
+            Intent intent = new Intent(this,ReplayActivity.class);
             startActivity(intent);
         }
     }

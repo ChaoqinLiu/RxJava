@@ -166,6 +166,21 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name="com.example.rxjava.ConnectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.rxjava.RefCountActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.rxjava.ReplayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
 
     </application>
 
