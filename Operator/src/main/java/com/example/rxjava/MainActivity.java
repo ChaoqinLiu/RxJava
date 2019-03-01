@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_takeWhile).setOnClickListener(this);
         findViewById(R.id.btn_merge).setOnClickListener(this);
         findViewById(R.id.btn_zip).setOnClickListener(this);
+        findViewById(R.id.btn_combineLatest).setOnClickListener(this);
+        findViewById(R.id.btn_join).setOnClickListener(this);
+        findViewById(R.id.btn_startWith).setOnClickListener(this);
     }
 
     @Override
@@ -151,6 +154,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(v.getId() == R.id.btn_zip){
             Intent intent = new Intent(this,ZipActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_combineLatest){
+            Intent intent = new Intent(this,CombineLatestActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_join){
+            Intent intent = new Intent(this,JoinActivity.class);
+            startActivity(intent);
+        }
+        if(v.getId() == R.id.btn_startWith){
+            Intent intent = new Intent(this,StartActivity.class);
             startActivity(intent);
         }
     }
