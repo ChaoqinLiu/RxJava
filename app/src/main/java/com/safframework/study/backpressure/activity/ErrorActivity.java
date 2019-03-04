@@ -27,7 +27,7 @@ public class ErrorActivity extends BaseActivity {
 
             @Override
             public void subscribe(FlowableEmitter<Integer> e) throws Exception {
-                for (int i = 0; i<129; i++) {
+                for (int i = 0; i<128; i++) {
                     e.onNext(i);
                 }
             }
